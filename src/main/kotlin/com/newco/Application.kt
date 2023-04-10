@@ -10,5 +10,6 @@ fun main(args: Array<String>): Unit =
 fun Application.module() {
     configureSecurity()
     configureSerialization()
+    Databasefactory.init()
     configureRouting()
 }

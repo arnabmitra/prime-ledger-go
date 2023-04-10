@@ -1,0 +1,26 @@
+DROP INDEX IF EXISTS user_accounts;
+DROP INDEX IF EXISTS idem_user_account;
+DROP INDEX IF EXISTS account_balance_index;
+DROP INDEX IF EXISTS sender_transactions;
+DROP INDEX IF EXISTS receiver_transactions;
+DROP INDEX IF EXISTS transaction_entries;
+DROP INDEX IF EXISTS request_entries;
+DROP INDEX IF EXISTS account_entries;
+DROP INDEX IF EXISTS transaction_holds;
+DROP INDEX IF EXISTS request_holds;
+DROP INDEX IF EXISTS account_holds;
+
+DROP TABLE IF EXISTS entry CASCADE;
+DROP TABLE IF EXISTS profile CASCADE;
+DROP TABLE IF EXISTS finalized_transaction CASCADE;
+DROP TABLE IF EXISTS released_hold CASCADE;
+DROP TABLE IF EXISTS hold CASCADE;
+DROP TABLE IF EXISTS transaction CASCADE;
+DROP TABLE IF EXISTS account_balance CASCADE;
+DROP TABLE IF EXISTS account CASCADE;
+DROP TYPE IF EXISTS direction CASCADE;
+DROP TYPE IF EXISTS ttype CASCADE;
+
+DROP EXTENSION IF EXISTS "uuid-ossp";
+
+DROP TYPE IF EXISTS account_result CASCADE;
